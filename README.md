@@ -3,13 +3,13 @@
 A hive driver for Go's [database/sql](https://golang.org/pkg/database/sql/) package
 
 ## Features
-    * Support hive thrift server 2
-    * Support SASL
-    * Implement database/sql package
+* Support hive thrift server 2
+* Support SASL
+* Implement database/sql package
 
 ## Requirements
-    * Go 1.10+
-    * Hive thrift server 2
+* Go 1.10+
+* Hive thrift server 2
 
 ## Usage
 ```go
@@ -21,6 +21,6 @@ import (
 )
 
 func main()  {
-        db, err := sql.Open("hive", "user:password@host:port?auth=sasl&batch=500")
+        db, err := sql.Open("hive", "hive://user:password@host:port?auth=sasl&batch=500")
 }
 ```
